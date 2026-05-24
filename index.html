@@ -412,27 +412,27 @@
           class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up"
           style="animation-delay: 0.4s"
         >
-<form
-  action="https://formspree.io/f/xpqnjqyg"
-  method="POST"
-  class="flex items-center gap-2 glass rounded-full p-1.5 pl-5 w-full sm:w-auto"
->
-  <input
-    type="email"
-    name="email"
-    required
-    placeholder="you@thinking.com"
-    class="bg-transparent outline-none text-sm flex-1 sm:w-64 placeholder:text-ink-400"
-  />
+          <form
+            onsubmit="handleWaitlist(event)"
+            class="flex items-center gap-2 glass rounded-full p-1.5 pl-5 w-full sm:w-auto"
+          >
+            <input
+              type="email"
+              required
+              placeholder="you@thinking.com"
+              class="bg-transparent outline-none text-sm flex-1 sm:w-64 placeholder:text-ink-400"
+            />
+            <form action="https://formspree.io/f/xqabcdzy" method="POST">
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
 
-  <button
-    type="submit"
-    class="bg-gradient-to-br from-luma-300 to-luma-500 text-ink-950 px-5 py-2.5 rounded-full text-sm font-semibold hover:shadow-[0_0_30px_rgba(245,181,68,0.5)] transition-all whitespace-nowrap"
-  >
-    Join waitlist →
-  </button>
-  <input type="hidden" name="_subject" value="New Luma waitlist signup!" />
-</form>
+              <button type="submit">Join Waitlist</button>
+            </form>
+          </form>
           <a
             href="#demo"
             class="text-sm text-ink-200 hover:text-white transition flex items-center gap-2"
@@ -1062,7 +1062,7 @@
     <!-- ============ TESTIMONIALS ============ -->
     <section class="py-32 px-6 relative">
       <div class="max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-3 gap-4">
+        <div class="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto">
           <div class="reveal glass rounded-2xl p-6">
             <p class="font-serif text-lg leading-relaxed text-ink-100 mb-6">
               "I used to lose ideas constantly. Now my best thoughts come back
@@ -1132,7 +1132,7 @@
           </h2>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-4">
+        <div class="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto">
           <!-- Free -->
           <div class="reveal glass rounded-2xl p-8">
             <div class="text-xs uppercase tracking-wider text-ink-400 mb-2">
@@ -1183,7 +1183,7 @@
               <span class="font-serif text-5xl gold-text">€12</span>
               <span class="text-sm text-ink-400">/month</span>
             </div>
-            <p class="text-sm text-ink-300 mb-6">For thinkers who ship.</p>
+            <p class="text-sm text-ink-300 mb-6">For serious thinking.</p>
             <ul class="space-y-3 text-sm text-ink-200 mb-8">
               <li class="flex gap-2">
                 <span class="text-luma-300">✓</span> Unlimited thoughts
