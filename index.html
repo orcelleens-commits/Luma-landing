@@ -412,23 +412,26 @@
           class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up"
           style="animation-delay: 0.4s"
         >
-          <form
-            onsubmit="handleWaitlist(event)"
-            class="flex items-center gap-2 glass rounded-full p-1.5 pl-5 w-full sm:w-auto"
-          >
-            <input
-              type="email"
-              required
-              placeholder="you@thinking.com"
-              class="bg-transparent outline-none text-sm flex-1 sm:w-64 placeholder:text-ink-400"
-            />
-            <button
-              type="submit"
-              class="bg-gradient-to-br from-luma-300 to-luma-500 text-ink-950 px-5 py-2.5 rounded-full text-sm font-semibold hover:shadow-[0_0_30px_rgba(245,181,68,0.5)] transition-all whitespace-nowrap"
-            >
-              Join waitlist →
-            </button>
-          </form>
+<form
+  action="https://formspree.io/f/YOUR_FORM_ID"
+  method="POST"
+  class="flex items-center gap-2 glass rounded-full p-1.5 pl-5 w-full sm:w-auto"
+>
+  <input
+    type="email"
+    name="email"
+    required
+    placeholder="you@thinking.com"
+    class="bg-transparent outline-none text-sm flex-1 sm:w-64 placeholder:text-ink-400"
+  />
+
+  <button
+    type="submit"
+    class="bg-gradient-to-br from-luma-300 to-luma-500 text-ink-950 px-5 py-2.5 rounded-full text-sm font-semibold hover:shadow-[0_0_30px_rgba(245,181,68,0.5)] transition-all whitespace-nowrap"
+  >
+    Join waitlist →
+  </button>
+</form>
           <a
             href="#demo"
             class="text-sm text-ink-200 hover:text-white transition flex items-center gap-2"
